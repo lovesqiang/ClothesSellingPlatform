@@ -1,0 +1,154 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.banner{
+  width: 100%;
+  height: 500rpx;
+}
+
+.banner_img{
+  width: 100%;
+  height: 500rpx;
+}
+
+.banner image{
+  width: 100%;
+  height: 500rpx;
+}
+
+
+/* 搜索框系列 */
+.weui-search-bar {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-around;
+	align-items: center;
+  box-sizing: border-box;
+  background-color: #EFEFF4;
+  border-top: 1rpx solid #D7D6DC; 
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.mini-btn{
+  margin-right: 10rpx;
+  color: white;
+  background-color: #d5c59f;
+}
+
+/* 分类 */
+.title{
+  font-size: 40rpx;
+  font-weight: bolder;
+  padding: 10rpx;
+}
+
+.classifty{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;  /* 换行排列 */
+}
+
+.classifty view{
+  color: black;
+  font-size: 35rpx;
+  padding: 10rpx;
+  border-bottom: 1px solid rgb(245,244,244);
+}
+
+.recommend{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 120rpx; */
+  padding-top: 20rpx;
+  border: 1rpx solid rgb(245, 244, 244);
+}
+
+.recommend_right_top{
+  font-size: 35rpx;
+
+}
+
+.recommend_image{
+  width: 35%;
+  
+}
+
+.recommend_image image{
+  width: 100%;
+  height: 120rpx;
+}
+
+.recommend_right{
+	width: 480rpx;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.recommend_right_bottom{
+	width: 480rpx;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.price{
+	color: #FF2926;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+}
+
+.recommend_cart{
+  width: 55rpx;
+  height: 55rpx;
+  padding-right: 10rpx;
+}

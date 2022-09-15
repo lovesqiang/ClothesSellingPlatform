@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18rpx;
+    border-bottom: 1rpx solid rgb(245, 244, 244);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 35rpx;
+    color: rgb(253, 154, 5);
+    font-weight: bolder;
+}
+
+.date{
+    color: rgb(219, 213, 213);
+    font-size: 25rpx;
+}
+
+.bottom {
+    padding: 12rpx 0;
+}
+
+.bottom text{
+    font-size: 35rpx;
+    color: rgb(180, 173, 173);
+}

@@ -1,0 +1,31 @@
+<!--pages/more/more.wxml-->
+<view>
+    <view class="top">
+        <view class="classifty">
+            <block wx:for="{{sort}}" wx:key="_sort">
+                <navigation-bar class="na">
+                    <view class="catagory" bindtap="getId" data-id="{{item.s_id}}">{{item.s_name}}</view>
+                </navigation-bar>
+            </block>
+        </view>
+    </view>
+
+
+     <!-- 商品展示 -->
+     <view class="title">当前分类：{{catagory}}</view>
+    <view class="recommend"  wx:for="{{show}}" wx:key="_show">
+        <view class="recommend_image">
+            <image src="{{item.w_imgSrc}}" mode="widthFix"></image>
+        </view>
+        <view class="recommend_right">
+
+            <view class="recommend_right_top">{{item.title}}</view>
+            <view class="recommend_right_bottom">
+                <view class="price">￥{{item.price}}元</view>
+                <image class="recommend_cart" bindtap="addCart" data-id="{{item.w_id}}" src="/images/cart2.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+</view>

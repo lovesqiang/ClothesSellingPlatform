@@ -1,0 +1,142 @@
+.edit{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15rpx;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid rgb(245, 244, 244);
+}
+
+.edit .left{
+	font-size: 35rpx;
+	color: rgb(207, 205, 205);
+}
+
+.edit .right{
+	width: 25%;
+}
+
+.edit .right button{
+	width: 100%;
+}
+
+.allBody{
+	width: 100%;
+	margin-bottom: 150rpx;
+	
+}
+
+.cart_shop{
+	width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15rpx;
+    border-bottom: 2rpx solid rgb(221, 219, 219);
+	box-sizing: border-box;
+}
+
+.cart_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+.cart_left image{
+    width: 70%;
+}
+
+.cart_right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.decription{
+    font-size: 35rpx;
+}
+
+.right_bottom{
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    padding-top: 16rpx;
+}
+
+.cart-count-tools {
+    /* width: 90rpx; */
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cars-count-tools text{
+    width: 30rpx ;
+}
+
+.input-count {
+	width: 60rpx;
+	height: 50rpx;
+	border: 1px solid rgb(224, 222, 222);
+	text-align: center;
+	line-height: 50rpx;
+	z-index: -1;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+    font-size: 26rpx;
+}
+
+/* 购物车的总计 */
+
+.cart-sum {
+	width: 100%;
+	height: 140rpx;
+	display: flex;
+	flex: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	border-top: 1px solid rgb(224, 222, 222);
+	position: fixed;
+	left:0;
+	bottom: 0;
+	
+}
+
+.check-left {
+	flex-basis: 30%;
+	padding-left: 20px;
+}
+
+.check-right {
+	flex-basis: 70%;
+	display: flex;
+	flex: row nowarp;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.submit-order {
+	flex-basis: 160rpx;
+	height: 140rpx;
+	background-color: red;
+	color: white;
+	font-size: 28rpx;
+	text-align: center;
+	line-height: 140rpx;
+}
+
+.sum-price {
+	text-align: right;
+	padding-right: 10px;
+	line-height: 70rpx;
+}

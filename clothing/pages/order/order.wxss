@@ -1,0 +1,52 @@
+/* pages/order/order.wxss */
+.order{
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    width: 100%;
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid rgb(245, 244, 244);
+}
+
+.order-id{
+    padding-top: 16rpx;
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    color: rgb(196, 184, 184);
+}
+
+.order_description{
+    padding-top: 10rpx;
+}
+
+.order-left{
+    width: 30%;
+}
+
+.order-image{
+    width: 100%;
+}
+
+.order_right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rpx;
+}
+
+.order_right_del{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:30rpx ;
+    box-sizing: border-box;
+}
+
+.price{
+    color: rgb(245, 52, 52);
+    font-size: 35rpx;
+}
+
+.order_right_del button{
+   width: 40%;
+} 

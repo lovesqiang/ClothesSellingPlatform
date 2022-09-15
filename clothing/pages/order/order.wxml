@@ -1,0 +1,23 @@
+<!--pages/order/order.wxml-->
+<view wx:for="{{order}}" wx:key="index">
+
+    <view class="order-id">订单编号：{{item.o_id}}</view>
+
+    <view class="order">
+        <view class="order-left">
+            <image src="{{item.w_imgSrc}}" mode="widthFix" class="order-image"></image>
+        </view>
+
+        <view class="order_right">
+            <view class="order_description">{{item.title}}</view>
+            <view class="order_right_del">
+                <view>
+                    <view class="price">￥{{item.num * item.price}}</view>
+                    <view>共{{item.num}}件商品</view>
+                </view>
+                <button size="mini" bindtap="delOrder" data-id="{{item.o_id}}">删除订单</button>
+            </view>
+        </view>
+
+    </view>
+</view>

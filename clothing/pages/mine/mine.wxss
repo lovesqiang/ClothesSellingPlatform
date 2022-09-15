@@ -1,0 +1,89 @@
+/* pages/mine/mine.wxss */
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20rpx 0 20rpx 10rpx;
+    border-bottom: 80rpx solid rgb(240, 236, 236);
+    align-items: center;
+}
+
+.head_image{
+    width: 20%;
+}
+
+.head_image image{
+    width: 100%;
+
+}
+
+.head_right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 46rpx;
+}
+
+.enrol{
+    font-size: 50rpx;
+    font-weight: bolder;
+
+}
+
+.description{
+    font-size: 26rpx;
+    color: rgb(204, 195, 195);
+    padding-top: 16rpx;
+}
+
+.order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   border-bottom: 50rpx solid rgb(240, 236, 236);
+}
+
+.order_top{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid rgb(240, 236, 236);
+    padding: 15rpx 0;
+}
+
+.order_bottom{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 15rpx 0;
+}
+
+.icon_font{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+     justify-content: center; 
+    /* align-items: center; */
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon image{
+    width: 60%;
+}
+
+.font{
+    font-size: 24rpx;
+    text-align: center;
+}
+
+.service{
+   padding-left: 15rpx;
+   border-bottom: 1rpx solid rgb(245,244,244);
+}

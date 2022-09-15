@@ -1,0 +1,50 @@
+<!--pages/cart/cart.wxml-->
+<!-- 编辑框 -->
+<view class="edit">
+    <view class="left">编辑</view>
+    <view class="right">
+        <button class="del" bindtap="delCart">删除</button>
+    </view>
+</view>
+
+<view class="allBody">
+    <view class="cart_shop" wx:for="{{cart_shop}}" wx:key="index">
+        <!-- 图片与复选框 -->
+        <view class="cart_left">
+            <switch type="checkbox" checked="{{item.checked}}" bindchange="changeState" data-id="{{item.c_id}}">
+            </switch>
+            <image src="{{item.w_imgSrc}}" mode="widthFix"></image>
+        </view>
+        <!-- 标题，价格与数量操作 -->
+        <view class="cart_right">
+            <!-- 标题 -->
+            <view class="decription">{{item.title}}</view>
+            <view class="right_bottom">
+                <!-- 价格 -->
+                <view class="price">￥{{item.price}}元</view>
+                <!-- 数量加减框 -->
+                <view class="cart-count-tools">
+                    <text class="number-str" bindtap="deNum" data-id="{{item.w_id}}" data-num="{{item.num}}">-</text>
+                    <input type="number" value="{{item.num}}" class="input-count"></input>
+                    <text class="number-str" bindtap="addNum" data-id="{{item.w_id}}" data-num="{{item.num}}">+</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 购物车总计 -->
+<view class="cart-sum">
+    <view class="check-left">
+        <label>
+            <switch type="checkbox" checked="{{allChoose}}" bindchange="allSelect"></switch>
+            全选
+        </label>
+    </view>
+    <view class="check-right">
+        <view class="sum-price">
+            <view> {{sum}} 件宝贝共￥{{allPrice}}</view>
+        </view>
+        <view class="submit-order" bindtap="addOrder">加入订单</view>
+    </view>
+</view>

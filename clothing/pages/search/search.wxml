@@ -1,0 +1,52 @@
+<!--pages/search/search.wxml-->
+<view>
+
+    <!-- 搜索框 -->
+    <view>
+        <view class="weui-search-bar">
+
+            <view class="weui-search-bar__form">
+                <!-- 搜索框 -->
+
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="站内搜索" bindinput="getInput" focus="{{focus}}" selection-end="1"/>
+                </view>
+
+            </view>
+
+            <!-- 搜索按钮,调用搜索查询方法 -->
+            <button class="mini-btn" size="mini" bindtap="search">搜索</button>
+        </view>
+    </view>
+
+    <view class="like">猜你喜欢</view>
+
+    <view class="likefont" >
+    <block wx:for="{{like}}" wx:key="_like">
+        <text bindtap="getLike" data-like="{{item}}">{{item}}</text>
+    </block>
+        
+       
+    </view>
+
+      <!-- 搜索结果 -->
+      <view class="title like" >搜索结果</view>
+    <view class="recommend" wx:for="{{searchShop}}" wx:key="_index">
+        <view class="recommend_image">
+            <image src="{{item.w_imgSrc}}" mode="widthFix"></image>
+        </view>
+        <view class="recommend_right">
+
+            <view class="recommend_right_top">{{item.title}}</view>
+            <view class="recommend_right_bottom">
+                <view class="price">￥{{item.price}}元</view>
+                <image class="recommend_cart" bindtap="addCart" data-id="{{item.w_id}}" src="/images/cart2.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+
+
+</view>

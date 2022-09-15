@@ -1,0 +1,116 @@
+/* pages/search/search.wxss */
+/* 搜索框系列 */
+.weui-search-bar {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+      align-items: center;
+    box-sizing: border-box;
+    background-color: #EFEFF4;
+    border-top: 1rpx solid #D7D6DC; 
+  }
+  .weui-icon-search_in-box {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+  }
+  .weui-search-bar__form {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+            flex: auto;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1rpx solid #E6E6EA;
+  }
+  .weui-search-bar__box {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  .weui-search-bar__input {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  
+  .mini-btn{
+    margin-right: 10rpx;
+    color: white;
+    background-color: #d5c59f;
+  }
+
+  .like{
+      padding:20rpx 16rpx;
+      font-weight: bolder;
+      font-size: 40rpx;
+  }
+
+  .likefont{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 15rpx;
+  }
+
+  .likefont text{
+      color: rgb(182, 175, 175);
+      padding: 10rpx;
+      font-size: 33rpx;
+  }
+
+  .recommend{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 120rpx; */
+    padding-top: 20rpx;
+    border: 1rpx solid rgb(245, 244, 244);
+  }
+  
+  .recommend_right_top{
+    font-size: 35rpx;
+  
+  }
+  
+  .recommend_image{
+    width: 35%;
+    
+  }
+  
+  .recommend_image image{
+    width: 100%;
+    height: 120rpx;
+  }
+  
+  .recommend_right{
+      width: 480rpx;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+  }
+  
+  .recommend_right_bottom{
+      width: 480rpx;
+      display: flex;
+      justify-content: space-between;
+    align-items: center;
+    padding: 10rpx;
+  }
+  
+  .price{
+      color: #FF2926;
+    margin-left: 10rpx;
+    font-size: 38rpx;
+  }
+  
+  .recommend_cart{
+    width: 55rpx;
+    height: 55rpx;
+    padding-right: 10rpx;
+  }

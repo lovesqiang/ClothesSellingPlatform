@@ -1,0 +1,14 @@
+<!--pages/message/message.wxml-->
+
+<view class="content"  wx:for="{{news}}"  wx:key="_index">
+  <view class="top">
+    <!-- 标题和时间 -->
+    <view class="title">{{item.n_title}}</view>
+    <view class="date">{{item.n_date}}</view>
+  </view>
+  <view class="bottom">
+    <!-- 详情 -->
+    <text>{{item.n_detail}}</text>
+
+  </view>
+</view>

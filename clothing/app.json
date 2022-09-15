@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/more/more",
+    "pages/order/order"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8aba6",
+    "navigationBarTitleText": "潮流女装",
+    "navigationBarTextStyle":"white"
+  },
+
+  "tabBar": {
+    "color": "#1C1C1C",
+    "selectedColor": "#f05b72",
+    "backgroundColor": "#feeeed",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+        {
+            "text": "首页",
+            "pagePath": "pages/index/index",
+            "iconPath": "/images/index1.png",
+            "selectedIconPath": "/images/index2.png"
+        },
+        {
+            "text": "消息",
+            "pagePath": "pages/message/message",
+            "iconPath": "/images/message1.png",
+            "selectedIconPath": "/images/message2.png"
+        },
+        {
+            "text": "购物车",
+            "pagePath": "pages/cart/cart",
+            "iconPath": "/images/cart1.png",
+            "selectedIconPath": "/images/cart2.png"
+        },
+        {
+            "text": "我的",
+            "pagePath": "pages/mine/mine",
+            "iconPath": "/images/mine1.png",
+            "selectedIconPath": "/images/mine2.png"
+        }
+    ]
+},
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
